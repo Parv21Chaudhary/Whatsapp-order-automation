@@ -19,21 +19,21 @@ This project solves that problem by building an end-to-end automation pipeline.
 
 ## 🔁 Workflow Architecture
 
-WhatsApp Message
-↓
-whatsapp-web.js (listener)
-↓
-n8n Webhook
-↓
-AI Parsing (Ollama - local LLM)
-↓
-Output Parser (JSON)
-↓
-Price Calculation Engine
-↓
-Excel / Google Sheets
-↓
-WhatsApp Confirmation 👍
+WhatsApp Message<br>
+↓<br>
+whatsapp-web.js (listener)<br>
+↓<br>
+n8n Webhook<br>
+↓<br>
+AI Parsing (Ollama - local LLM)<br>
+↓<br>
+Output Parser (JSON)<br>
+↓<br>
+Price Calculation Engine<br>
+↓<br>
+Excel / Google Sheets<br>
+↓<br>
+WhatsApp Confirmation 👍<br>
 
 
 ---
@@ -65,13 +65,13 @@ WhatsApp Confirmation 👍
 
 ##  Project Structure
 
-Whatsapp-order-automation/
-│
-├── whatsapp-bridge/ 
-├── n8n-workflows/ 
-├── architecture.md
-├── architecture.png
-└── README.md
+Whatsapp-order-automation/ <br>
+│<br>
+├── whatsapp-bridge/ <br>
+├── n8n-workflows/ <br>
+├── architecture.md<br>
+├── architecture.png<br>
+└── README.md<br>
 
 
 ---
