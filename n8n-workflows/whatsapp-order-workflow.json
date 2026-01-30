@@ -1,0 +1,173 @@
+{
+  "name": "",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "[redacted]",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -320,
+        -208
+      ],
+      "id": "[redacted]",
+      "name": "Webhook",
+      "webhookId": "[redacted]"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "[redacted]",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": ""
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.1,
+      "position": [
+        -96,
+        -208
+      ],
+      "id": "[redacted]",
+      "name": "AI Agent",
+      "executeOnce": true
+    },
+    {
+      "parameters": {
+        "model": "[redacted]",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
+      "typeVersion": 1,
+      "position": [
+        0,
+        16
+      ],
+      "id": "[redacted]",
+      "name": "Groq Chat Model",
+      "credentials": {}
+    },
+    {
+      "parameters": {
+        "jsCode": "[redacted]"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        304,
+        -208
+      ],
+      "id": "[redacted]",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "jsCode": "[redacted]"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        528,
+        -208
+      ],
+      "id": "[redacted]",
+      "name": "Code1"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": "[redacted]",
+        "sheetName": "[redacted]",
+        "columns": {},
+        "options": {
+          "cellFormat": "USER_ENTERED"
+        }
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        752,
+        -208
+      ],
+      "id": "[redacted]",
+      "name": "Append row in sheet",
+      "credentials": {}
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{\n  \"status\": \"success\"\n}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        976,
+        -208
+      ],
+      "id": "[redacted]",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": []
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1104,
+        -64
+      ],
+      "id": "[redacted]",
+      "name": "Edit Fields",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": "[redacted]",
+        "sheetName": "[redacted]",
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": []
+        },
+        "options": {
+          "cellFormat": "USER_ENTERED"
+        }
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        720,
+        -32
+      ],
+      "id": "[redacted]",
+      "name": "Append row in sheet1",
+      "credentials": {}
+    }
+  ],
+  "pinData": {},
+  "connections": {},
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "[redacted]",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "[redacted]"
+  },
+  "id": "[redacted]",
+  "tags": []
+}

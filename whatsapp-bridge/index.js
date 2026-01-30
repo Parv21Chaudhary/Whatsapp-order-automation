@@ -12,11 +12,11 @@ const client = new Client({
 
 // Allowed sources (personal number + group chat)
 const ALLOWED_SOURCES = [
-    '@c.us',    // Your personal number
-    '@g.us'     // Your group chat
+    '[REDACTED_PHONE_NUMBER]@c.us',    // Your personal number
+    '[REDACTED_GROUP_ID]@g.us'         // Your group chat
 ];
 
-const N8N_WEBHOOK_URL = 'http://localhost:5678/webhook/whatsapp-orders';
+const N8N_WEBHOOK_URL = '[REDACTED_WEBHOOK_URL]';
 
 // Generate QR for first login
 client.on('qr', qr => {
@@ -48,7 +48,7 @@ client.on('auth_failure', msg => {
 client.on('message', async message => {
     try {
         if (ALLOWED_SOURCES.includes(message.from)) {
-            console.log(`📩 Order from ${message.from}: ${message.body}`);
+            console.log(`📩 Order from [REDACTED_SENDER]: ${message.body}`);
 
             const messageText = message.body.toLowerCase();
 
