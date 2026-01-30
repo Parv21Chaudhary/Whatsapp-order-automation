@@ -15,6 +15,8 @@ Small businesses often receive orders through WhatsApp in free-text formats, whi
 
 This project solves that problem by building an end-to-end automation pipeline.
 
+PS: I had built this for my family business 
+
 ---
 ## System Workflow
 
