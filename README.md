@@ -16,6 +16,9 @@ Small businesses often receive orders through WhatsApp in free-text formats, whi
 This project solves that problem by building an end-to-end automation pipeline.
 
 ---
+## System Workflow
+
+![Workflow](/architecture.png)
 
 ## 🔁 Workflow Architecture
 
